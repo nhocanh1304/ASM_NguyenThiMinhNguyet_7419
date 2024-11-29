@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Store</title>
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="Online Shopping Store .css">
+
+    <!-- font awesome icons file -->
+    <script src="https://kit.fontawesome.com/618de8cdbb.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    
+    <!-- Header section starts -->
+     <header class="header">
+        <a href="#" class="logo"><i class="fa-solid fa-shop"></i> J E R R Y </a>
+        <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#featured">Freatured</a>
+                <a href="#review">Review</a>
+                <a href="#contact">Contact</a>
+                <a href="#blogs">Blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn"></div>
+            <a href="cart.html" class="fa-solid fa-cart-shopping" id="cart-icons"></a>
+            <a href="heart-product.html" class="fas fa-heart"></a>
+            <a href="signin.html" class="fas fa-user"></a>
+        </div>
+
+        <!-- <form action="" class="search-form">
+            <input type="search" name="" placeholder="Search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form> -->
+     </header>
+
+
+     <!-- home section starts -->
+     <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide" style="background: url(image/banner1.jpg) no-repeat">
+                    <div class="content">
+                        <span>upto 50% off</span>
+                        <h3>Women's Fashion</h3>
+                        <a href="#" class="btn">Shop now</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background:url(image/banner2.jpg) no-repeat">
+                    <div class="content">
+                        <span>upto 50% off</span>
+                        <h3>Men's Fashion</h3>
+                        <a href="#" class="btn">Shop now</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(image/banner3.jpg) no-repeat">
+                    <div class="content">
+                        <span>upto 50% off</span>
+                        <h3>Kid's Fashion</h3>
+                        <a href="#" class="btn">Shop now</a>
+                    </div>
+                </div>
+            </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+        </div>
+     </section>
+
+
+      <!-- banner section starts -->
+
+      <section class="banner-container">
+        <div class="banner">
+            <img src="image/shop_banner_img1.jpg" alt="">
+            <div class="content">
+                <span>Special offer</span>
+                <h3>upto 50% off</h3>
+                <a href="#" class="btn">Shop now</a>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="image/shop_banner_img2.jpg" alt="">
+            <div class="content">
+                <span>Special offer</span>
+                <h3>upto 50% off</h3>
+                <a href="#" class="btn">Shop now</a>
+            </div>
+        </div>
+      </section>
+
+    <!-- banner section ends -->
+
+    <!-- product section starts -->
+    <section class="products" id="products">
+
+        <h1 class="heading"> Exclusive <span>products</span></h1>
+
+        <div class="filter-buttons">
+            <div class="buttons" data-filter="all">All</div>
+            <div class="buttons" data-filter="arrivals">New arrivals</div>
+            <div class="buttons" data-filter="featured">Featured</div>
+            <div class="buttons" data-filter="special">Special</div>
+            <div class="buttons" data-filter="seller">Seller</div>
+        </div>
+
+        <div class="box-container">
+            <div class="box" data-item="featured">
+                <div class="icons">
+                    <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
+                    <a href="#" class="fas fa-heart"></a>
+
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <div class="image">
+                    <img src="image/product_img1.jpg" alt="">
+                </div>
+                
+                <div class="content">
+                    <h3> Ribbed Johnny Collar Sweater Tee </h3>
+                    <div class="price">
+                        <div class="amount">$40.80</div>
+                        <div class="cut">$68.00</div>
+                        <div class="offer">40% off</div>
+                    </div>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(50)</span>
+                    </div>
+                </div>
+                <div class="cart">
+                    <button class="add-cart" onclick="addToCart('Ribbed Johnny Collar Sweater Tee', 40.80)"><h2 class="btn">Add To Cart</h2></button>
+                </div>
+            </div>
+
+
+            <div class="box" data-item="special">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <div class="image">
+                    <img src="image/product_img2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3> Tech Chore Jacket </h3>
+                    <div class="price">
+                        <div class="amount">$44.40</div>
+                        <div class="cut">$74.00</div>
+                        <div class="offer">40% off</div>
+                    </div>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(50)</span>
+                    </div>
+                </div>
+                <div class="cart">
+                    <button class="add-cart" onclick="addToCart('Tech Chore Jacket', 44.40)"><h2 class="btn">Add To Cart</h2></button>
+                </div>
+            </div>
+
+            
+            <div class="box" data-item="seller">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <div class="image">
+                    <img src="image/product_img3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3> Silk Charmeuse Midi Skirt </h3>
+                    <div class="price">
+                        <div class="amount">$44.40</div>
+                        <div class="cut">$74.00</div>
+                        <div class="offer">40% off</div>
+                    </div>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(50)</span>
+                    </div>
+                </div>
+                <div class="cart">
+                    <button class="add-cart" onclick="addToCart('Silk Charmeuse Midi Skirt', 44.40)"><h2 class="btn">Add To Cart</h2></button>
+                </div>
+            </div>
+
+            <div class="box" data-item="arrivals">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <div class="image">
+                    <img src="image/product_img4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3> Appaman Boy sports jacket </h3>
+                    <div class="price">
+                        <div class="amount">$46.80</div>
+                        <div class="cut">$78.00</div>
+                        <div class="offer">40% off</div>
+                    </div>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(50)</span>
+                    </div>
+                </div>
+                <div class="cart">
+                    <button class="add-cart" onclick="addToCart('Appaman Boy sports jacket', 46.80)"><h2 class="btn">Add To Cart</h2></button>
+                </div>
+            </div>
+
+            <div class="box" data-item="featured">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <div class="image">
+                    <img src="image/product_img5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3> High Rise Fluid Crepe Trouser </h3>
+                    <div class="price">
+                        <div class="amount">$59.95</div>
+                        <div class="cut">$35.97</div>
+                        <div class="offer">40% off</div>
+                    </div>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(50)</span>
+                    </div>
+                </div>
+                <div class="cart">
+                    <button class="add-cart" onclick="addToCart('High Rise Fluid Crepe Trouser', 59.95)"><h2 class="btn">Add To Cart</h2></button>
+                </div>
+            </div>
+
+            <div class="box" data-item="arrivals">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <div class="image">
+                    <img src="image/product_img6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3> Short Sleeve Camp Collar Club Print Shirt </h3>
+                    <div class="price">
+                        <div class="amount">$52.80</div>
+                        <div class="cut">$88.00</div>
+                        <div class="offer">40% off</div>
+                    </div>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(50)</span>
+                    </div>
+                </div>
+                <div class="cart">
+                    <button class="add-cart" onclick="addToCart('Short Sleeve Camp Collar Club Print Shirt', 52.80)"><h2 class="btn">Add To Cart</h2></button>
+                </div>
+            </div>
+
+            <div class="box" data-item="special">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <div class="image">
+                    <img src="image/product_img7.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3> Baxter 7 Shorts </h3>
+                    <div class="price">
+                        <div class="amount">$64.80</div>
+                        <div class="cut">$108.00</div>
+                        <div class="offer">40% off</div>
+                    </div>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(50)</span>
+                    </div>
+                </div>
+                <div class="cart">
+                    <button class="add-cart" onclick="addToCart('Baxter 7 Shorts', 64.80)"><h2 class="btn">Add To Cart</h2></button>
+                </div>
+            </div>
+
+            <div class="box" data-item="seller">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <div class="image">
+                    <img src="image/product_img8.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3> Nikki Bomber Jacket </h3>
+                    <div class="price">
+                        <div class="amount">$58.80</div>
+                        <div class="cut">$98.00</div>
+                        <div class="offer">40% off</div>
+                    </div>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(50)</span>
+                    </div>
+                </div>
+                <div class="cart">
+                    <button class="add-cart" onclick="addToCart('Nikki Bomber Jacket', 58.80)"><h2 class="btn">Add To Cart</h2></button>
+                </div>
+            </div>
+
+            <div class="box" data-item="seller">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <div class="image">
+                    <img src="image/product_img9.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3> Long Sleeve Shirt Jacket </h3>
+                    <div class="price">
+                        <div class="amount">$46.80</div>
+                        <div class="cut">$78.00</div>
+                        <div class="offer">40% off</div>
+                    </div>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(50)</span>
+                    </div>
+                </div>
+                <div class="cart">
+                    <button class="add-cart" onclick="addToCart('Long Sleeve Shirt Jacket', 46.80)"><h2 class="btn">Add To Cart</h2></button>
+                </div>
+            </div>
+
+            <div class="box" data-item="featured">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <div class="image">
+                    <img src="image/product_img10.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3> Embroidered Eyelet Sheath Dress </h3>
+                    <div class="price">
+                        <div class="amount">$58.00</div>
+                        <div class="cut">$98.00</div>
+                        <div class="offer">40% off</div>
+                    </div>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(50)</span>
+                    </div>
+                </div>
+                <div class="cart">
+                    <button class="add-cart" onclick="addToCart('Embroidered Eyelet Sheath Dress', 58.00)"><h2 class="btn">Add To Cart</h2></button>
+                </div>
+            </div>
+
+            <div class="box" data-item="special">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <div class="image">
+                    <img src="image/product_img11.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3> Flannel shirt </h3>
+                    <div class="price">
+                        <div class="amount">$58.80</div>
+                        <div class="cut">$98.00</div>
+                        <div class="offer">40% off</div>
+                    </div>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(50)</span>
+                    </div>
+                </div>
+                <div class="cart">
+                    <button class="add-cart" onclick="addToCart('Flannel shirt', 58.80)"><h2 class="btn">Add To Cart</h2></button>
+                </div>
+            </div>
+
+            <div class="box" data-item="seller">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <div class="image">
+                    <img src="image/product_img12.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3> Dobby striped shirt </h3>
+                    <div class="price">
+                        <div class="amount">$88.80</div>
+                        <div class="cut">$148.00</div>
+                        <div class="offer">40% off</div>
+                    </div>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(50)</span>
+                    </div>
+                </div>
+                <div class="cart">
+                    <button class="add-cart" onclick="addToCart('Dobby striped shirt', 88.80)"><h2 class="btn">Add To Cart</h2></button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="view">
+            <button><a href="product.html"><i class="fas fa-arrow-right"></i> View all </a></button>
+        </div> -->
+      </section>
+
+      <!-- deal section starts -->
+      <section class="deal">
+
+        <div class="images">
+            <img src="image/treading_img.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <span>New Season Treading</span>
+            <h3>Best Summer Collection</h3>
+            <p> sale get up to 50% off</p>
+            <a href="#" class="btn"> Shop now </a>
+        </div>
+      </section>
+
+      <!-- featured section starts -->
+
+      <section class="featured" id="featured">
+
+        <h1 class="heading"> <span>featured</span> products </h1>
+
+        <div class="swiper featured-slider">
+            
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+    
+                    <div class="image">
+                        <img src="image/product_img1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3> Ribbed Johnny Collar Sweater Tee </h3>
+                        <div class="price">
+                            <div class="amount">$40.80</div>
+                            <div class="cut">$68.00</div>
+                            <div class="offer">40% off</div>
+                        </div>
+                        <div class="starts">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(50)</span>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <button class="add-cart" onclick="addToCart('Ribbed Johnny Collar Sweater Tee', 40.80)"><h2 class="btn">Add To Cart</h2></button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+    
+                    <div class="image">
+                        <img src="image/product_img2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3> Tech Chore Jacket </h3>
+                        <div class="price">
+                            <div class="amount">$44.40</div>
+                            <div class="cut">$74.00</div>
+                            <div class="offer">40% off</div>
+                        </div>
+                        <div class="starts">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(50)</span>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <button class="add-cart" onclick="addToCart('Tech Chore Jacket', 44.40)"><h2 class="btn">Add To Cart</h2></button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+    
+                    <div class="image">
+                        <img src="image/product_img3.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3> Silk Charmeuse Midi Skirt </h3>
+                        <div class="price">
+                            <div class="amount">$44.40</div>
+                            <div class="cut">$74.00</div>
+                            <div class="offer">40% off</div>
+                        </div>
+                        <div class="starts">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(50)</span>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <button class="add-cart" onclick="addToCart('Silk Charmeuse Midi Skirt', 44.40)"><h2 class="btn">Add To Cart</h2></button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+    
+                    <div class="image">
+                        <img src="image/product_img4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3> Appaman Boy Sports Jacket </h3>
+                        <div class="price">
+                            <div class="amount">$46.80</div>
+                            <div class="cut">$78.00</div>
+                            <div class="offer">40% off</div>
+                        </div>
+                        <div class="starts">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(50)</span>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <button class="add-cart" onclick="addToCart('Appaman Boy Sports Jacket', 46.80)"><h2 class="btn">Add To Cart</h2></button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+    
+                    <div class="image">
+                        <img src="image/product_img5.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3> High Rise Fluid Crepe Trouser </h3>
+                        <div class="price">
+                            <div class="amount">$59.95</div>
+                            <div class="cut">$35.97</div>
+                            <div class="offer">40% off</div>
+                        </div>
+                        <div class="starts">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(50)</span>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <button class="add-cart" onclick="addToCart('High Rise Fluid Crepe Trouser', 59.95)"><h2 class="btn">Add To Cart</h2></button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+    
+                    <div class="image">
+                        <img src="image/product_img6.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3> Short Sleeve Camp Collar Club Print Shirt </h3>
+                        <div class="price">
+                            <div class="amount">$52.80</div>
+                            <div class="cut">$88.00</div>
+                            <div class="offer">40% off</div>
+                        </div>
+                        <div class="starts">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(50)</span>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <button class="add-cart" onclick="addToCart('Short Sleeve Camp Collar Club Print Shirt', 52.80)"><h2 class="btn">Add To Cart</h2></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <!-- <div class="view">
+            <a href="product.html"><i class="fas fa-arrow-right"></i> View all </a>
+        </div> -->
+    </section>
+
+
+
+     <!-- Review section starts -->
+    <section class="review" id="review">
+
+        <h1 class="heading">client's <span>review</span></h1>
+
+        <div class="swiper review-slide">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                       Autem totam deserunt officiis mollitia molestiae corporis quasi at nam sed est.
+                    </p>
+
+                    <div class="user">
+                        <img src="image/pic-1.png" alt="">
+                        <div class="info">
+                            <h3>John deo</h3>
+                            <span>happy client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                       Autem totam deserunt officiis mollitia molestiae corporis quasi at nam sed est.
+                    </p>
+
+                    <div class="user">
+                        <img src="image/pic-2.png" alt="">
+                        <div class="info">
+                            <h3>John deo</h3>
+                            <span>happy client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                       Autem totam deserunt officiis mollitia molestiae corporis quasi at nam sed est.
+                    </p>
+
+                    <div class="user">
+                        <img src="image/pic-3.png" alt="">
+                        <div class="info">
+                            <h3>John deo</h3>
+                            <span>happy client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                       Autem totam deserunt officiis mollitia molestiae corporis quasi at nam sed est.
+                    </p>
+
+                    <div class="user">
+                        <img src="image/pic-4.png" alt="">
+                        <div class="info">
+                            <h3>John deo</h3>
+                            <span>happy client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                       Autem totam deserunt officiis mollitia molestiae corporis quasi at nam sed est.
+                    </p>
+
+                    <div class="user">
+                        <img src="image/pic-5.png" alt="">
+                        <div class="info">
+                            <h3>John deo</h3>
+                            <span>happy client</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                       Autem totam deserunt officiis mollitia molestiae corporis quasi at nam sed est.
+                    </p>
+
+                    <div class="user">
+                        <img src="image/pic-6.png" alt="">
+                        <div class="info">
+                            <h3>John deo</h3>
+                            <span>happy client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+
+
+     <!-- Contact section starts -->
+
+     <section class="contact" id="contact">
+
+        <h1 class="heading"><span>contact</span> us </h1>
+
+        <div class="icons-container">
+
+            <div class="icons">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Address</h3>
+                <p>Jogeshwari, mumbai, india - 400104</p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>shaikhanas@gmail.com</p>
+                <p>anasbhai@gmail.com</p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-phone"></i>
+                <h3>Phone</h3>
+                <p>+401-619-4647</p>
+                <p>+815-277-9676</p>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <form action="">
+                <h3>get in touch</h3>
+                <div class="inputBox">
+                    <input type="text" placeholder="your name">
+                    <input type="email" placeholder="your email">
+                </div>
+
+                <div class="inputBox">
+                    <input type="number" placeholder="your number">
+                    <input type="text" placeholder="your subject">
+                </div>
+                <textarea placeholder="your message" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59587.97840467533!2d105.79576388181606!3d21.022734639774537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1713439030928!5m2!1svi!2s" 
+            allowfullscreen="" loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            
+        </div>
+     </section>
+
+
+
+     <!-- Blogs section starts -->
+
+     <section class="blogs" id="blogs">
+
+        <h1 class="heading"> Our <span>Blogs</span></h1>
+
+        <div class="swiper blogs-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="image/blog-1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Blog title goes here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere.</p>
+                        <a href="#" class="btn"> Read more </a>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-calendar"></i> 21st may, 2021</a>
+                            <a href="#"><i class="fas fa-user"></i> by admin </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="image/blog-2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Blog title goes here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere.</p>
+                        <a href="#" class="btn"> Read more </a>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-calendar"></i> 21st may, 2021</a>
+                            <a href="#"><i class="fas fa-user"></i> by admin </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="image/blog-3.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Blog title goes here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere.</p>
+                        <a href="#" class="btn"> Read more </a>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-calendar"></i> 21st may, 2021</a>
+                            <a href="#"><i class="fas fa-user"></i> by admin </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="image/blog-4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Blog title goes here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere.</p>
+                        <a href="#" class="btn"> Read more </a>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-calendar"></i> 21st may, 2021</a>
+                            <a href="#"><i class="fas fa-user"></i> by admin </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="image">
+                        <img src="image/blog-5.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Blog title goes here</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere.</p>
+                        <a href="#" class="btn"> Read more </a>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-calendar"></i> 21st may, 2021</a>
+                            <a href="#"><i class="fas fa-user"></i> by admin </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+     </section>
+
+
+     <!-- Footer section starts -->
+
+     <section class="footer">
+
+        <div class="box-container">
+
+            <div class="boxs">
+                <h3>about us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, hic.</p>
+            </div>
+
+            <div class="boxs">
+                <h3>Category</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> men </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> women </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> kids </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> best seller </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> new arrivals </a>
+            </div>
+
+            <div class="boxs">
+                <h3>quick licks</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> Home </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Products </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Featured </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Review </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Contact </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Blogs </a>
+            </div>
+
+            <div class="boxs">
+                <h3>extra licks</h3>
+                <a href="#"><i class="fas fa-arrow-right"></i> my order </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> my account </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> my listing </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> sell now </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> new offers </a>
+            </div>
+        </div>
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+
+        <div class="credit"> &copy; copyright @2021 by <span>mr. web designer</span></div>
+     </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom JS file link -->
+    <script src="Online Shopping Store .js"></script>
+    <script src="cart.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+.money {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #f2f2f2, #e0e0e0);
+}
+
+.money-cart {
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.money-cart h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.money-cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.money-cart p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.money-cart #total-price {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.money-cart .input-money {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.money-cart .btnmoney {
+    background-color: #eb4d4b;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.money-cart .btnmoney:hover {
+    background-color: #130f40;
+} 
+
+
+
+/* Thanh Search
+.search-form {
+    position: absolute;
+    top: 115%; right: -105%;
+    width: 50rem;  height: 5.5rem;
+    background: #fff;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .3);
+}
+
+.active {
+    right: 2rem;
+    transition: .2s linear;
+}
+
+/* .search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    text-transform: none;
+    color: #130f40;
+    padding: 0 1.2rem;
+}
+
+.search-form label {
+    font-size: 2rem;
+    margin-right: 1.7rem;
+}
+
+.search-form label:hover {
+    color: #eb4d4b;
+} */
